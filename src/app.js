@@ -90,7 +90,3 @@ app.get("*", (req, res) => {
 app.listen(3000, () => {
   console.log("Server has started");
 });
-
-//cd weatherapp\dash\'web server'
-//nodemon .\src\app.js -e js, hbs
-//hi
