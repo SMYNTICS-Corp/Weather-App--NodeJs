@@ -6,6 +6,7 @@ const geocode = require("./Utils/geoCodeAPI");
 const foreCast = require("./Utils/forecastAPI");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //define paths for express confgs
 const publicDirectoryPath = path.join(__dirname, "..", "/public");
@@ -87,6 +88,11 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server has started");
+app.listen(port, () => {
+  console.log("Server has started in " + port);
 });
+
+//Heroku setup -
+//Note- Heroku CLI(command line interface) should be installed.
+//heroku keys: add = in project root folder.
+//heroku create __application name(should be a unique one)
