@@ -92,7 +92,5 @@ app.listen(port, () => {
   console.log("Server has started in " + port);
 });
 
-//Heroku setup -
-//Note- Heroku CLI(command line interface) should be installed.
-//heroku keys: add = in project root folder.
-//heroku create __application name(should be a unique one)
+// cd weatherApp/dash/'web server'
+// nodemon src/app.js -e js, hbs
