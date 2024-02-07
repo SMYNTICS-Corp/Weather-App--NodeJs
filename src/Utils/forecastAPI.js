@@ -40,7 +40,8 @@ const foreCast = (lat, long, callback) => {
             "The pressure is " +
             body.current.pressure +
             " and the humidity is " +
-            body.current.humidity
+            body.current.humidity +
+            "%"
         );
       }
     }
